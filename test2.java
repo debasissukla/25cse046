@@ -1,27 +1,15 @@
-import java.util.Scanner;
-
-class test2 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter a string: ");
-        String str = sc.nextLine();
-
-        int n = str.length();
-
-        if (n < 2) {
-            System.out.println("String must contain at least 2 characters.");
-        } else {
-            String firstTwo = str.substring(0, 2);
-            String result = "";
-
-            for (int i = 0; i < n; i++) {
-                result = result + firstTwo;
-            }
-
-            System.out.println("Result: " + result);
-        }
-
-        sc.close();
-    }
+class test2
+{
+public static void main(String args[])
+	{
+	int x[]=new int[5];
+	x[0]=100;
+	x[1]=200;
+	x[2]=300;
+	x[3]=400;
+	x[4]=500;
+	System.out.println("The elements are: ");
+	System.out.println(x[0] +" , "+ x[1] +" , "+ x[2] +" , "+( x[3] + x[4] ));
+	System.out.println(x[0] + x[1] + x[2] + x[3] +" , "+ x[4] );
+	}
 }

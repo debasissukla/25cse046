@@ -1,19 +1,9 @@
-import java.util.Scanner;
-
-class test3 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter a string: ");
-        String str = sc.nextLine();
-
-        if (str.length() % 2 == 0) {
-            String result = str.substring(0, str.length() / 2);
-            System.out.println("Result: " + result);
-        } else {
-            System.out.println("Result: null");
-        }
-
-        sc.close();
-    }
+class test3
+{
+	public static void main(String args[])
+		{
+		int x[]={100,200,300,400,500};
+		for(int i=0;i<6;i++)
+		System.out.println(x[i]);
+		}
 }

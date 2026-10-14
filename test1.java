@@ -1,21 +1,22 @@
 import java.util.Scanner;
-
-class test1 {
-   public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-
-       System.out.print("Enter first string: ");
-       String str1 = sc.nextLine();
-
-       System.out.print("Enter second string: ");
-       String str2 = sc.nextLine();
-
-       String result = str1 + str2;
-	System.out.println("The original string is: " + result);
-
-	String rev = result.toLowerCase();
-       System.out.println("The reversed String is: " + rev);
-
-       sc.close();
-   }
+class test1
+{
+public static void main(String args[])
+	{
+	int mark1,mark2,mark3;
+	String dob,name;
+	float avarage;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter your name: ");
+	name=sc.nextLine();
+	System.out.println("enter your date of birth[dd/mm/yyyy]: ");
+	dob=sc.nextLine();
+	System.out.println("enter your mark1,mark2,mark3 ");
+	mark1=sc.nextInt();
+	mark2=sc.nextInt();
+	mark3=sc.nextInt();
+	avarage=(float)(mark1+mark2+mark3)/3;
+	System.out.println(name+" "+dob+" "+avarage);
+	}
 }
+     
